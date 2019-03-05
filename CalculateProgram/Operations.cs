@@ -14,8 +14,8 @@ namespace CalculateProgram
             {
                 try
             {
-                Console.WriteLine("Enter First number: ");
-                a = Double.Parse(Console.ReadLine());
+                    Console.Write("Enter First number: ");
+                    a = Double.Parse(Console.ReadLine());
                     break;
             }
             catch (System.FormatException e1)
@@ -28,8 +28,8 @@ namespace CalculateProgram
             {
                 try
                 {
-                    Console.WriteLine("Enter Second number: ");
-                    b = int.Parse(Console.ReadLine());
+                    Console.Write("Enter Second number: ");
+                    b = Double.Parse(Console.ReadLine());
                     break;
 
                 }
@@ -42,12 +42,7 @@ namespace CalculateProgram
         }
         public void operationToPerform()
         {
-            Console.WriteLine("Enter one of the operator");
-            Console.WriteLine("\n*");
-            Console.WriteLine("\n/");
-            Console.WriteLine("\n+");
-            Console.WriteLine("\n-");
-            Console.WriteLine("\n%");
+            Console.Write("Select operation to perform (+, -, *, /, % ) :  ");
 
             string oper = Console.ReadLine();
 
